@@ -40,8 +40,8 @@ str(meta$new_change1)
 str(meta$new_change)
 #str(meta$new_date)
 
-#meta_clean<-meta %>% 
-  #mutate(date=mdy(Date)) %>% 
+meta_clean<-meta %>% 
+  mutate(date=mdy(meta$Date))
   #mutate(gsub("\\%", "", meta$Change..))
 #head(meta_clean)
 
